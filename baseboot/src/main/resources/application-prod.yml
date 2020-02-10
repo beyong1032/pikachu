@@ -1,0 +1,21 @@
+#开发配置
+spring:
+  profiles: prod
+
+  datasource:
+#    mysql:
+    url: jdbc:mysql://123.56.165.120:3308/project?useUnicode=true&characterEncoding=utf8&useSSL=true&zeroDateTimeBehavior=convertToNull
+    username: epwork1o
+    password: Ygyy5899
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+      
+#    sqlserver:
+#      url: jdbc:sqlserver://10.172.188.68:1433;DatabaseName=new_ygyy_db
+#      username: backsa
+#      password: nihao123!
+#      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#      # 使用druid数据源
+#      type: com.alibaba.druid.pool.DruidDataSource
+        

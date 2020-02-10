@@ -1,0 +1,15 @@
+server:
+  port: 8088
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: HTML5
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+    
+mybatis:
+  typeAliasesPackage: com.example.demo.domain
+  mapperLocations: classpath:mappers/*.xml
